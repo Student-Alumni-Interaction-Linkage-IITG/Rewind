@@ -56,7 +56,7 @@
                 <button type="button" style="font-family: Helvetica;" id="registerbtn">Register</button>
             </a>
             <div style="color: #66FCF1;">
-                <div style="font-size: 2vw; font-weight: 800;font-family: 'Poppins';">29:10:19:13</div>
+                <div id="timestamp" style="font-size: 2vw; font-weight: 800;font-family: 'Poppins';"></div>
                 <div style="font-size: 1.1vw; padding-right: 1.6%; font-weight: 700;font-family: Helvetica;"> &nbsp;  DAYS &nbsp;HRS &nbsp;MIN
                     &nbsp;SEC</div>
             </div>
@@ -93,7 +93,7 @@
             to take a specific action on a page is known as a call to action.</p>
         <button type="button" id="registerbtn-mob">Register</button>
         <div style="color: #66FCF1;">
-            <div style="font-size: 4vw; font-weight: 800;">29:10:19:13</div>
+            <!-- <div id="timestamp" style="font-size: 4vw; font-weight: 800;">hello</div> -->
             <div style="font-size: 2.5vw; padding-right: 1.6%; font-weight: 700">&nbsp; DAYS &nbsp;HRS &nbsp;MIN
                 &nbsp;SEC</div>
         </div>
@@ -132,6 +132,33 @@
             $(this).toggleClass('open');
         });
     });
+
+    var dest = new Date("dec 10, 2022 12:00:00").getTime();
+
+    
+    setInterval(() => {
+
+        var now  = new Date().getTime();
+        var diff = dest - now;
+
+        var days = Math.floor(diff/(1000*60*60*24));
+        // console.log(days);
+
+        var hours = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
+        // console.log(hours);
+
+        var minutes = Math.floor((diff % (1000*60*60))/(1000*60));
+        // console.log(minutes);
+
+        var second = Math.floor((diff % (1000*60))/1000);
+        // console.log(second);
+
+        console.log(days + "d, " + hours + "h, " + minutes + "min, " + second + "sec, ");
+        document.getElementById('timestamp').textContent = days + ":" + hours + ":" + minutes + ":" + second;
+        console.log(document.getElementById('timestamp').textContent);
+
+    },1000 );
+    
 </script>
 
 </html>
