@@ -277,46 +277,69 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="events-box" id="box">
-        <button class="button" id="btn" onclick="EventsInfo()">EVENTS</button>
-        <div class="eventsinfo" id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos ullam est.
-            Iusto ut incidunt asperiores ipsa expedita quia amet laborum officia obcaecati, maiores eligendi, esse dicta
-            distinctio. Omnis, officia?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nostrum aut qui
-            enim iure doloremque voluptatum recusandae id eum delectus possimus, dolorem quis distinctio consectetur
-            ipsum hic quasi incidunt adipisci!</div>
+    <!-- <div class="events-box" id="box">
+        <button class="eventbtn" id="eventbtn" onclick="EventsInfo()">EVENTS</button>
+        <div class="eventsinfo" id="eventsinfo" style="font-size:15px; position: relative;">To experience the
+            unexperienced
+            (thanks to Covid,
+            huh..) we have various events planned during your three days visit from Scaveneger Hunt to Graduation
+            Ceremony. Hope you create the best memories out of them..
+            <br>
+            <h1 style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1>
+        </div>
+    </div> -->
+
+    <div class="about">
+        <button type="button" id="aboutbtn">EVENTS</button>
+        <p class="aboutpara" id="aboutpara">To experience the unexperienced
+            (thanks to Covid,
+            huh..) we have various events planned during your three days visit from Scaveneger Hunt to Graduation
+            Ceremony. Hope you create the best memories out of them..
+            <br>
+        <h1 style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1> 
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 
+    
+ -->
+
+
 <script>
-    const EventsInfo = () => {
-        let inf = document.getElementById('info');
-        let box = document.getElementById('box');
-        let btn = document.getElementById('btn');
-        if (inf.style.display == "none") {
-            inf.style.display = "block";
-            box.style.backgroundColor = "#334660";
-            btn.style.backgroundColor = "white";
-            btn.style.color = "black";
-            document.getElementById("info").style.transitionDuration = "1000ms";
-            document.getElementById("box").style.transitionDuration = "1000ms";
-            document.getElementById("btn").style.transitionDuration = "1000ms";
-            document.getElementById("info").style.transitionTimingFunction = "ease-out";
-            document.getElementById("box").style.transitionTimingFunction = "ease-out";
-            document.getElementById("btn").style.transitionTimingFunction = "ease-out";
+
+    $('#aboutbtn').click(function () {
+        const para = document.getElementById('aboutpara');
+
+        if ($('#aboutpara').css('visibility') == 'hidden') {
+            console.log(para);
+            $('#aboutpara').css({
+                'visibility': 'visible'
+            });
+            $('.about').css({
+                'backgroundColor': '#334660'
+            });
         }
         else {
-            inf.style.display = "none";
-            box.style.backgroundColor = "#46A29F";
-            btn.style.backgroundColor = "#46A29F";
-            btn.style.color = "white";
-            document.getElementById("info").style.transitionDuration = "1000ms";
-            document.getElementById("box").style.transitionDuration = "1000ms";
-            document.getElementById("btn").style.transitionDuration = "1000ms";
-            document.getElementById("info").style.transitionTimingFunction = "ease-out";
-            document.getElementById("box").style.transitionTimingFunction = "ease-out";
-            document.getElementById("btn").style.transitionTimingFunction = "ease-out";
+            $('.aboutpara').css({
+                'visibility': 'hidden'
+            });
+            $('.about').css({
+                'background-color': '#46A29F'
+            });
+            $('.aboutbtn').css({
+                'background': 'transparent',
+                'color': '#FFFFFF'
+            });
         }
-    }
+    });
+
+    $(document).ready(function () {
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+            $(this).toggleClass('open');
+        });
+    });
 </script>
+
+
 
 </html>
