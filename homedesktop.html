@@ -9,28 +9,28 @@
       <title>Rewind</title>
   </head>
   <body>
-    <div  class="heading">
+    <div  class="heading hidden">
       <img src="assets/icon.png">
       <h1 class="head">REWIND</h1>
     </div>
-    <button class="animationbtn" onclick=ButtonClicked()>
-      <video src="assets/rewind.mp4" width="200" height="200" autoplay>
-        <!-- <source> -->
-        <p>Your browser doesn't supports this video. loser</p>
-      </video>
-    </button>
-    <div class="paradiv">
+    <div style="display: flex; justify-content:center;">
+      <video id="vid" muted style="position: relative;z-index: -1;; left: auto;right: auto; width:100%; height: 100vh;" autoplay>
+        <source src="assets/rewind.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video> 
+    </div>
+    <div class="paradiv hidden">
       <p class="para">A great event website is able to effectively transform a website visitor into an attendee.<br> 
         Getting visitors to take a specific action on a page is known as a call to action</p>
     </div>
-    <a href="events.html">
+    <a href="events.html" class="hidden">
       <button class="button button1">Enter</button>
     </a>
   </body>
   <script>
-    var buttonRef = document.getElementById('animationbtn');
-    const ButtonClicked = () => {
-      buttonRef.classList.add("removeanimation");
+    document.getElementById('vid').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+      document.body.addEventListener('click', ()=>{window.location.href = 'events.html';},true); 
     }
   </script>
 </html>

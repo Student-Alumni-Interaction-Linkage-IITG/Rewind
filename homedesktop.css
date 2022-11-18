@@ -139,7 +139,7 @@ font-family: Helvetica;
   }
   .para{
 
-
+    font-family: 'Poppins';
    left: 30px;
 
   }
@@ -151,6 +151,9 @@ font-family: Helvetica;
 
 
 }
+.hidden{
+  display: none;
+}
 
 .button {
   background-color: #4CAF50; /* Green */
@@ -158,6 +161,7 @@ font-family: Helvetica;
   color: white;
   padding: 16px 32px;
   text-align: center;
+  font-family: Helvetica;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;

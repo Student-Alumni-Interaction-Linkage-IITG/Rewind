@@ -292,6 +292,49 @@ nav a:hover:before {
     height: 100%;
 }
 
+
+.about {
+    background-color: #46A29F;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 10vw;
+    width: 100%;
+    transition-duration: .5s;
+}
+
+#aboutbtn {
+    background: transparent;
+    box-sizing: border-box;
+    font-size: 2.5vw;
+    color: #FFFFFF;
+    font-weight: 700;
+    width: 20vw;
+    height: 5.5vw;
+    margin: 2% 2% 2% 4%;
+    border: 3px solid #000000;
+    border-radius: 40px;
+    transition-property: color background-color;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#aboutbtn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.aboutpara {
+    /* display: none; */
+    visibility: hidden;
+    position: relative;
+    font-family: 'Space Mono';
+    background: transparent;
+    padding: 3% 8% 2% 0%;
+    transition-property: visibility;
+    transition-duration: .1s;
+}
+
 /**
 Animations
 **/
