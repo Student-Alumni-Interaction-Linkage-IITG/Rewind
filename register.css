@@ -2,7 +2,7 @@
 * {
     font-family: 'Space Mono';
     margin: 0%;
-    background-color: rgba(11, 12, 16, 0.95);
+    /* background-color: rgba(11, 12, 16, 0.95); */
     /* background-color: #FFFFFF; */
 }
 
@@ -27,6 +27,10 @@
     height: 10px;
     z-index: 5;
     cursor: pointer;
+}
+
+body{
+    background-image: url('assets/btech1.png');
 }
 
 .hamburger div {
@@ -150,7 +154,7 @@ Animations
 }
 
 #registerbtn {
-    color: #FFFFFF;
+    color:#000000;
     font-weight: 600;
     font-size: 1.8vw;
     width: 12vw;

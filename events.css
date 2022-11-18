@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Open+Sans&family=Poppins&display=swap');
 body{
     background-color: #0B0C10;
 }
@@ -332,6 +333,7 @@ nav a:hover:before {
     visibility: hidden;
     position: relative;
     font-family: 'Poppins';
+    font-size: large;
     background: transparent;
     padding: 3% 8% 2% 0%;
     transition-property: visibility;
@@ -371,14 +373,14 @@ Animations
 .hamcontainer {
     background-color: red;
 }
-.cheers{
+/* .cheers{
 
     visibility: hidden;
     position: relative;
     margin: 2% 2% 2% 2%;
     top: 2em;
   
-}
+} */
 .carousel-inner
 {
     position: relative;

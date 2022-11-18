@@ -2,34 +2,13 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-<<<<<<< HEAD
-      <link rel="stylesheet" href="homedesktop.css">
-=======
       <link rel="stylesheet" href="rewind.css">
->>>>>>> 6c8c9b6a7efb8843c54f3cbdae38cebcea345d94
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       <title>Rewind</title>
   </head>
   <body>
-<<<<<<< HEAD
-    <div  class="heading">
-      <img src="assets/icon.png">
-      <h1 class="head">REWIND</h1>
-    </div>
-    <button class="animationbtn" onclick=ButtonClicked()>
-      <video src="assets/rewind.mp4" width="200" height="200" autoplay>
-        <!-- <source> -->
-        <p>Your browser doesn't supports this video. loser</p>
-      </video>
-    </button>
-    <div class="paradiv">
-      <p class="para">A great event website is able to effectively transform a website visitor into an attendee.<br> 
-        Getting visitors to take a specific action on a page is known as a call to action</p>
-    </div>
-    <a href="events.html">
-=======
     <div  class="heading hidden">
       <img src="assets/icon.png">
       <h1 class="head">REWIND</h1>
@@ -45,20 +24,13 @@
         Getting visitors to take a specific action on a page is known as a call to action</p>
     </div>
     <a href="events.html" class="hidden">
->>>>>>> 6c8c9b6a7efb8843c54f3cbdae38cebcea345d94
       <button class="button button1">Enter</button>
     </a>
   </body>
   <script>
-<<<<<<< HEAD
-    var buttonRef = document.getElementById('animationbtn');
-    const ButtonClicked = () => {
-      buttonRef.classList.add("removeanimation");
-=======
     document.getElementById('vid').addEventListener('ended',myHandler,false);
     function myHandler(e) {
       document.body.addEventListener('click', ()=>{window.location.href = 'events.html';},true); 
->>>>>>> 6c8c9b6a7efb8843c54f3cbdae38cebcea345d94
     }
   </script>
 </html>

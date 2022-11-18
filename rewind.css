@@ -21,7 +21,8 @@ html {
 body {
   max-height: 100%;
   max-width: 100%;
-  background-color: rgb(4, 6, 7);
+   background-color: rgb(4, 6, 7); 
+
 }
 
 /* .removeanimation {
