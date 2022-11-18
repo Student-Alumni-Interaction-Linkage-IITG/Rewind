@@ -47,7 +47,7 @@ font-family: 'Space Mono';
 
 .head{
     margin-left: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Helvetica;
         color: rgb(0, 234, 255);
         width: 63vw;
         height: 25vh;
@@ -103,6 +103,7 @@ font-family: 'Space Mono';
 
 left: 180px;
 right: 180px;
+font-family: Helvetica;
 
 
 

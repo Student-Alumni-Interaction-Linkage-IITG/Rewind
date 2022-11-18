@@ -67,6 +67,7 @@ nav {
 }
 nav a {
     margin-right: 5%;
+    font-family: Helvetica;
 
     position: relative;
     text-decoration: none;
