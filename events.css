@@ -294,13 +294,16 @@ nav a:hover:before {
 
 
 .about {
+    
     background-color: #46A29F;
     position: absolute;
     display: flex;
     flex-direction: row;
-    height: 10vw;
+    height: auto;
     width: 100%;
     transition-duration: .5s;
+    justify-content: center;
+    
 }
 
 #aboutbtn {
@@ -333,6 +336,7 @@ nav a:hover:before {
     padding: 3% 8% 2% 0%;
     transition-property: visibility;
     transition-duration: .1s;
+    color: #FFFFFF;
 }
 
 /**
@@ -366,4 +370,17 @@ Animations
 }
 .hamcontainer {
     background-color: red;
+}
+.cheers{
+
+    visibility: hidden;
+    position: relative;
+    margin: 2% 2% 2% 2%;
+    top: 2em;
+  
+}
+.carousel-inner
+{
+    position: relative;
+    top: -2em;
 }

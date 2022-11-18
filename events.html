@@ -290,13 +290,11 @@
     </div> -->
 
     <div class="about">
-        <button type="button" id="aboutbtn">EVENTS</button>
-        <p class="aboutpara" id="aboutpara">To experience the unexperienced
-            (thanks to Covid,
-            huh..) we have various events planned during your three days visit from Scaveneger Hunt to Graduation
-            Ceremony. Hope you create the best memories out of them..
+        <button type="button" id="aboutbtn" >EVENTS</button>
+        <p class="aboutpara" id="aboutpara">Everyone's dream is to live a cherishable college life, but Covid took the year 2020 and 2021. So to experience the most exciting and memorable moments of campus life, SAIL has planned 3 day fun filled alumni rewind for graduated batches of 2020 and 2021 to relive their old memories
             <br>
-        <h1 style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1> 
+            <!-- <h1  id ="cheers" class="cheers" style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1>  -->
+        </p>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -314,10 +312,17 @@
             console.log(para);
             $('#aboutpara').css({
                 'visibility': 'visible'
+                
             });
             $('.about').css({
                 'backgroundColor': '#334660'
             });
+            $("#cheers").css({
+                'visibility' : 'visible'
+            
+            });
+            
+
         }
         else {
             $('.aboutpara').css({
@@ -330,6 +335,10 @@
                 'background': 'transparent',
                 'color': '#FFFFFF'
             });
+            $("#cheers").css({
+                'visibility' : 'hidden'
+            
+            });
         }
     });
 
@@ -338,6 +347,9 @@
             $(this).toggleClass('open');
         });
     });
+ 
+
+
 </script>
 
 
