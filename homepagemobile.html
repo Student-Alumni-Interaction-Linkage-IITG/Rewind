@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?Poppins|Space Mono|Helvetica"/>
+    <link rel="stylesheet" href="homepagemobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone home page</title>
+</head>
+<body>
+    <div  class="heading" id="heading">
+        <img  src="assets/rewind.png" >
+  <!-- <h1 class="head" id="head">REWIND</h1> -->
+</div> 
+<div class="bluebar" id="blue"><p>A great event website is able to effectively transform a website<br> visitor into an attendee.visitors to take a specific<br> action on a page is known as a call to action</p></div>
+<button class="button button1" id="button">Enter</button>
+  <script >
+
+  $('.heading').click(function(){
+   const sqr = document.getElementById('blue');  
+    sqr.style.display = 'block';
+   const btn = document.getElementById('button');
+     btn.style.display = 'block';
+     const sqr1 = document.getElementById("heading");
+     sqr1.classList.add('animation');
+   const sqr2 = document.getElementById('head');
+      sqr2.style.fontFamily ='Space Mono';
+
+  })
+
+
+  </script>
+  
+</body>
+</html>

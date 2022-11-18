@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+        .flip-card {
+            background-color: transparent;
+            width: 320px;
+            height: 462px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        }
+        .new-card {
+            width: 320px;
+            height: 462px;
+            padding-top: 20px;
+            border-radius: 20px;
+        }
+        .card{
+            padding-top: 20px;
+            border-radius: 20px;
+        }
+        .sports-box{
+            font-family:'space mono';
+            font-weight: 700;    
+            font-size: 21px;
+            letter-spacing: 0.5px;
+            margin: auto;
+            /* margin-left: 38px; */
+            background-color: white;
+            width: 240px;
+            height: 75px;
+            /* display: flex; */
+            border-radius: 23px;
+            border: 3px black solid;
+        }
+        .sports-box:hover{
+            opacity: 80%;
+        }
+        .sports{
+            text-align: center;
+            font-family:'space mono';
+            font-weight: bolder;    
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+        .football{
+            margin: auto;
+            margin-top: 177px;
+            width: 220px;
+            height: 49px; 
+        }
+        .catch-spirit{
+            margin: auto;
+            width: 220px; 
+            height: 37px; 
+        }
+        .match{
+            margin-top: 15px;
+            display: flex;
+            width: 100%;
+            height: 34px;
+            justify-content: center;
+            /* gap: 10px; */
+        }
+        .team1{
+            width: 100px;
+            height: 100%;
+        }
+        .vs{
+            height: 100%;
+            width: 60px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .team2{
+            height: 100%;
+            width: 100px;
+        }
+        .lorem{
+            margin: auto;
+            margin-top: 9px;
+            width: 280px;
+            height: 43px;
+        }
+        .info{
+            margin: auto;
+            margin-top: 7px;
+            width: 220px;
+            height: 34px;
+        }
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="card gap flip-card-front" id="card2" style="background-image: url(./football.png);">
+                <button class="sports-box">
+                    <div class="sports s1">SPORTS</div>
+                    <div class="sports s2">TOURNAMENT</div>
+                </button>
+                <div class="football"></div>
+                <div class="catch-spirit"></div>
+                <div class="match">
+                    <div class="team1"></div>
+                    <div class="vs"></div>
+                    <div class="team2"></div>
+                </div>
+                <div class="lorem"></div>
+                <div class="info"></div>
+            </div>
+            <div class="flip-card-back new-card" id="detail6" style="background-image: url(./football.png);">
+                <button class="sports-box">
+                    <div class="sports s1">TOURNAMENT</div>
+                    <div class="sports s2">DETAIL</div>
+                </button>
+                <div class="football"></div>
+                <div class="catch-spirit"></div>
+                <div class="match">
+                    <div class="team1"></div>
+                    <div class="vs"></div>
+                    <div class="team2"></div>
+                </div>
+                <div class="lorem"></div>
+                <div class="info"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
