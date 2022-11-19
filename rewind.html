@@ -13,7 +13,7 @@
       <img src="assets/icon.png">
       <h1 class="head">REWIND</h1>
     </div>
-    <div style="display: flex; justify-content:center;">
+    <div class="video" style="display: flex; justify-content:center;">
       <video id="vid" muted style="position: relative;z-index: -1;; left: auto;right: auto; width:100%; height: 100vh;" autoplay>
         <source src="assets/rewind.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -23,14 +23,20 @@
       <p class="para">A great event website is able to effectively transform a website visitor into an attendee.<br> 
         Getting visitors to take a specific action on a page is known as a call to action</p>
     </div>
-    <a href="events.html" class="hidden">
+    <a href="rewindevents.html" class="hidden">
       <button class="button button1">Enter</button>
     </a>
   </body>
   <script>
-    document.getElementById('vid').addEventListener('ended',myHandler,false);
+    document.getElementById('vid').addEventListener('ended',myHandler1,false);
+    function myHandler1(e) {
+      window.location.href = 'rewindevents.html';
+      // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
+    }
+    document.getElementsByClassName('video').addEventListener('click',myHandler,true);
     function myHandler(e) {
-      document.body.addEventListener('click', ()=>{window.location.href = 'events.html';},true); 
+      window.location.href = 'rewindevents.html';
+      // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
     }
   </script>
 </html>

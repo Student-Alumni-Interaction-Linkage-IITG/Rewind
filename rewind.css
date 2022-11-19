@@ -29,6 +29,10 @@ body{
   background-size: cover; */
 }
 
+.video {
+  cursor: pointer;
+}
+
 /* .removeanimation {
   display: none;
   opacity: 0;

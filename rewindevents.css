@@ -332,7 +332,7 @@ nav a:hover:before {
     border-radius: 40px;
     transition-property: color background-color;
     transition-duration: .5s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 #aboutbtn:hover {
@@ -342,8 +342,9 @@ nav a:hover:before {
 
 .aboutpara {
     /* display: none; */
-    visibility: hidden;
+    /* visibility: hidden; */
     position: relative;
+    top: -13px;
     font-family: 'Poppins';
     font-size: large;
     background: transparent;
