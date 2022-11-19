@@ -227,7 +227,11 @@ Animations
     }
 
     * {
-        background-color: rgba(11, 12, 16, 0.95);
+        /* background-color: rgba(11, 12, 16, 0.95); */
+        background-image: url('assets/btech1.png');
+        background-repeat: no-repeat;
+        max-height: 100vw;
+        max-width: 100vw;
 
     }
 
