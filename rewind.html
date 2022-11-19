@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="rewind.css">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <title>Rewind</title>
-  </head>
-  <body>
-    <div  class="heading hidden">
-      <img src="assets/icon.png">
-      <h1 class="head">REWIND</h1>
-    </div>
-    <div class="video" style="display: flex; justify-content:center;">
-      <video id="vid" muted style="position: relative;z-index: -1;; left: auto;right: auto; width:100%; height: 100vh;" autoplay>
-        <source src="assets/rewind.mp4" type="video/mp4">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="rewind.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rewind</title>
+</head>
+
+<body>
+  <div class="heading hidden">
+    <img src="assets/icon.png">
+    <h1 class="head">REWIND</h1>
+  </div>
+  <div class="video" style="display: flex; justify-content:center;">
+    <video id="vid" muted style="position: relative;z-index: -1;; left: auto;right: auto; width:100%; height: 100vh;"
+      autoplay>
+      <source src="assets/rewind.mp4" type="video/mp4">
       Your browser does not support the video tag.
-      </video> 
-    </div>
-    <div class="paradiv hidden">
-      <p class="para">A great event website is able to effectively transform a website visitor into an attendee.<br> 
-        Getting visitors to take a specific action on a page is known as a call to action</p>
-    </div>
-    <a href="rewindevents.html" class="hidden">
-      <button class="button button1">Enter</button>
-    </a>
-  </body>
-  <script>
-    document.getElementById('vid').addEventListener('ended',myHandler1,false);
-    function myHandler1(e) {
-      window.location.href = 'rewindevents.html';
-      // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
-    }
-    document.getElementsByClassName('video').addEventListener('click',myHandler,true);
-    function myHandler(e) {
-      window.location.href = 'rewindevents.html';
-      // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
-    }
-  </script>
+    </video>
+  </div>
+  <div class="paradiv hidden">
+    <p class="para">A great event website is able to effectively transform a website visitor into an attendee.<br>
+      Getting visitors to take a specific action on a page is known as a call to action</p>
+  </div>
+  <a href="register.html" class="hidden">
+    <button class="button button1">Enter</button>
+  </a>
+</body>
+<script>
+  document.getElementById('vid').addEventListener('ended', myHandler1, false);
+  function myHandler1(e) {
+    window.location.href = 'register.html';
+    // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
+  }
+  document.getElementsByClassName('video').addEventListener('click', myHandler, true);
+  function myHandler(e) {
+    window.location.href = 'register.html';
+    // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
+  }
+</script>
+
 </html>
