@@ -28,6 +28,10 @@ body{
   background-image: url('assets/btech1.png');
 }
 
+.video {
+  cursor: pointer;
+}
+
 /* .removeanimation {
   display: none;
   opacity: 0;

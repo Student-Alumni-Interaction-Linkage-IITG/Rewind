@@ -193,7 +193,7 @@ Animations
     border-radius: 40px;
     transition-property: color background-color;
     transition-duration: .5s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 #aboutbtn:hover {
@@ -203,8 +203,9 @@ Animations
 
 .aboutpara {
     /* display: none; */
-    visibility: hidden;
+    /* visibility: hidden; */
     position: relative;
+    top: -20px;
     font-family: 'Space Mono';
     background: transparent;
     padding: 3% 8% 2% 0%;

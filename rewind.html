@@ -13,7 +13,7 @@
       <img src="assets/icon.png">
       <h1 class="head">REWIND</h1>
     </div>
-    <div style="display: flex; justify-content:center;">
+    <div class="video" style="display: flex; justify-content:center;">
       <video id="vid" muted style="position: relative;z-index: -1;; left: auto;right: auto; width:100%; height: 100vh;" autoplay>
         <source src="assets/rewind.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -28,9 +28,15 @@
     </a>
   </body>
   <script>
-    document.getElementById('vid').addEventListener('ended',myHandler,false);
+    document.getElementById('vid').addEventListener('ended',myHandler1,false);
+    function myHandler1(e) {
+      window.location.href = 'rewindevents.html';
+      // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
+    }
+    document.getElementsByClassName('video').addEventListener('click',myHandler,true);
     function myHandler(e) {
-      document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
+      window.location.href = 'rewindevents.html';
+      // document.body.addEventListener('click', ()=>{window.location.href = 'rewindevents.html';},true); 
     }
   </script>
 </html>
