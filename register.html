@@ -14,17 +14,20 @@
 
 <body>
     <header>
-        <div class="logo" >
-            <div class="sail" >
-                <a href="https://iitg.ac.in/sail/" style="text-decoration: none;"><img src="assets/sail.png" alt="" width="160" height="75"></a>
+        <div class="logo">
+            <div class="sail">
+                <a href="https://iitg.ac.in/sail/" style="text-decoration: none;"><img src="assets/sail.png" alt=""
+                        width="160" height="75"></a>
             </div></a>
-              
-            <div class="icon"><img src="assets/icon.png" alt="" width="60" height="80"></div>
-            <a href="homedesktop.html", style="text-decoration: none;">
-                <div class="rewind"><img src="assets/rewind.png" alt="" width="200" hegith="200"></div>
+
+            <div class="icon">
+                <!-- <img src="assets/icon.png" alt="" width="60" height="80"> -->
+            </div>
+            <a href="homedesktop.html" , style="text-decoration: none;">
+                <div class="rewind"><img src="assets/rewind.png" alt="" width="200" heigth="250"></div>
             </a>
             <input id="toggle" type="checkbox"></input>
-    
+
             <!-- <div class="hamcontainer"> -->
             <label for="toggle" class="hamburger">
                 <div class="top-bun"></div>
@@ -32,7 +35,7 @@
                 <div class="bottom-bun"></div>
             </label>
             <!-- </div> -->
-    
+
             <div class="nav">
                 <div class="nav-wrapper">
                     <nav>
@@ -43,21 +46,24 @@
             </div>
         </div>
     </header>
-    
+
     <div class="register-wide">
         <div class="register">
             <h1 style="margin: 0vw 0vw 2vw 0vw; font-family: 'Poppins';">REGISTER</h1>
-            <p style="padding: 1.5vw 5% 1.5vw 5%;font-family: 'Poppins';">A great event website is able to effectively transform a website
+            <p style="padding: 1.5vw 5% 1.5vw 5%;font-family: 'Poppins';">A great event website is able to effectively
+                transform a website
                 visitor
                 into an attendee.<br> Getting visitors
                 to take a specific action on a page is known as a call to action.</p>
             <!-- <a href="events.html"><i class="bi bi-chevron-right" id="rightchevron"></i></a> -->
-            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfzGbwiN2dcqhwSEz8QWU_UZGCS3HueFqxqXRpNT9I6_5hu0g/viewform?usp=sharing">
+            <a target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfzGbwiN2dcqhwSEz8QWU_UZGCS3HueFqxqXRpNT9I6_5hu0g/viewform?usp=sharing">
                 <button type="button" style="font-family: Helvetica;" id="registerbtn">Register</button>
             </a>
             <div style="color: #66FCF1;">
                 <div id="timestamp" style="font-size: 2vw; font-weight: 800;font-family: 'Poppins';"></div>
-                <div style="font-size: 1.1vw; padding-right: 1.6%; font-weight: 700;font-family: Helvetica;"> &nbsp;  DAYS &nbsp;HRS &nbsp;MIN
+                <div style="font-size: 1.1vw; padding-right: 1.6%; font-weight: 700;font-family: Helvetica;"> &nbsp;
+                    DAYS &nbsp;HRS &nbsp;MIN
                     &nbsp;SEC</div>
             </div>
         </div>
@@ -69,10 +75,10 @@
             </div> -->
         <div class="about">
             <button type="button" id="aboutbtn">ABOUT US</button>
-            <p class="aboutpara" id="aboutpara">A great event website is able to effectively transform a website
-                visitor
-                into an attendee.<br> Getting visitors
-                to take a specific action on a page is known as a call to action.</p>
+            <p class="aboutpara" id="aboutpara">Student Alumni Interaction Linkage (SAIL) is a voluntary cell of IIT
+                Guwahati under the office of Alumni Affairs and External Relations. It is operated by the students of
+                IIT Guwahati under the Guidance of the Dean, Alumni Affairs, and External Relations. SAIL acts as an
+                engaging and mutually beneficial link between IIT Guwahati and its Alumni community..</p>
         </div>
     </div>
 
@@ -82,11 +88,12 @@
 
             </div>
             <div class="menu-mob">
-                
+
             </div>
         </div>
         <h1 style="margin: 0vw 0vw 2vw 0vw; font-family: Helvetica; font-size: 5.5vw;">REGISTER</h1>
-        <p style="padding: 6vw 10vw 5vw 10vw; font-family: 'Poppins'; text-align: justify;">A great event website is able
+        <p style="padding: 6vw 10vw 5vw 10vw; font-family: 'Poppins'; text-align: justify;">A great event website is
+            able
             to effectively transform a website
             visitor
             into an attendee. Getting visitors
@@ -110,7 +117,7 @@
                 'visibility': 'visible'
             });
             $('.about').css({
-                'backgroundColor': '#334660'
+                'backgroundColor': '#3faec4'
             });
         }
         else {
@@ -135,30 +142,30 @@
 
     var dest = new Date("dec 10, 2022 12:00:00").getTime();
 
-    
+
     setInterval(() => {
 
-        var now  = new Date().getTime();
+        var now = new Date().getTime();
         var diff = dest - now;
 
-        var days = Math.floor(diff/(1000*60*60*24));
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
         // console.log(days);
 
-        var hours = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
+        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         // console.log(hours);
 
-        var minutes = Math.floor((diff % (1000*60*60))/(1000*60));
+        var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         // console.log(minutes);
 
-        var second = Math.floor((diff % (1000*60))/1000);
+        var second = Math.floor((diff % (1000 * 60)) / 1000);
         // console.log(second);
 
         console.log(days + "d, " + hours + "h, " + minutes + "min, " + second + "sec, ");
         document.getElementById('timestamp').textContent = days + ":" + hours + ":" + minutes + ":" + second;
         console.log(document.getElementById('timestamp').textContent);
 
-    },1000 );
-    
+    }, 1000);
+
 </script>
 
 </html>

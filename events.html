@@ -18,9 +18,11 @@
                     width="160" height="75"></a>
         </div></a>
 
-        <div class="icon"><img src="assets/icon.png" alt="" width="60" height="80"></div>
+        <div class="icon">
+            <!-- <img src="assets/icon.png" alt="" width="60" height="80"> -->
+        </div>
         <a href="homedesktop.html" , style="text-decoration: none;">
-            <div class="rewind"><img src="assets/rewind.png" alt="" width="200" hegith="200"></div>
+            <div class="rewind"><img src="assets/rewind.png" alt="" width="200vw" height="50vw"></div>
         </a>
         <input id="toggle" type="checkbox"></input>
 
@@ -290,8 +292,10 @@
     </div> -->
 
     <div class="about">
-        <button type="button" id="aboutbtn" >EVENTS</button>
-        <p class="aboutpara" id="aboutpara">Everyone's dream is to live a cherishable college life, but Covid took the year 2020 and 2021. So to experience the most exciting and memorable moments of campus life, SAIL has planned 3 day fun filled alumni rewind for graduated batches of 2020 and 2021 to relive their old memories
+        <button type="button" id="aboutbtn">EVENTS</button>
+        <p class="aboutpara" id="aboutpara">Everyone's dream is to live a cherishable college life, but Covid took the
+            year 2020 and 2021. So to experience the most exciting and memorable moments of campus life, SAIL has
+            planned 3 day fun filled alumni rewind for graduated batches of 2020 and 2021 to relive their old memories
             <br>
             <!-- <h1  id ="cheers" class="cheers" style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1>  -->
         </p>
@@ -312,16 +316,16 @@
             console.log(para);
             $('#aboutpara').css({
                 'visibility': 'visible'
-                
+
             });
             $('.about').css({
-                'backgroundColor': '#334660'
+                'backgroundColor': '#3faec4'
             });
             $("#cheers").css({
-                'visibility' : 'visible'
-            
+                'visibility': 'visible'
+
             });
-            
+
 
         }
         else {
@@ -336,8 +340,8 @@
                 'color': '#FFFFFF'
             });
             $("#cheers").css({
-                'visibility' : 'hidden'
-            
+                'visibility': 'hidden'
+
             });
         }
     });
@@ -347,7 +351,7 @@
             $(this).toggleClass('open');
         });
     });
- 
+
 
 
 </script>
