@@ -24,7 +24,8 @@ body{
 
 #registerbtn {
     align-content: left;
-    color: #FFFFFF;
+    color: black;
+    background-color: white;
     font-weight: 600;
     font-size: 1.8vw;
     width: 12vw;
@@ -34,11 +35,40 @@ body{
     margin: 1.8vw 0 5vw;
     cursor: pointer;
     z-index: 0;
+    position: absolute;
+    top: 2.2em;
+    right: 10%;
+    margin-left: -2em;
+    margin-top: -45px;
+    
 }
 
 #registerbtn:hover {
     color: #000000;
     background-color: rgba(29, 244, 229, 0.904);
+}
+
+.hamburger {
+    position: absolute;
+    top: 5em;
+    right: 3%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 2em;
+    height: 10px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.hamburger div {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color:aqua;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .card{
@@ -52,8 +82,8 @@ body{
     margin-left: 218px;
 }
 .new-card {
-    /* width: 320px;
-    height: 462px; */
+    width: 320px;
+    height: 462px;
     padding-top: 20px;
     border-radius: 20px;
 }
@@ -211,28 +241,7 @@ a{
 }
 
 
-.hamburger {
-    position: absolute;
-    top: 5em;
-    right: 3%;
-    margin-left: -2em;
-    margin-top: -45px;
-    width: 2em;
-    height: 10px;
-    z-index: 5;
-    cursor: pointer;
-}
 
-.hamburger div {
-    position: relative;
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    background-color:aqua;
-    margin-top: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
 
 .carousel-control{
     width: 5%;
