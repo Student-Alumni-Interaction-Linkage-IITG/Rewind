@@ -4,8 +4,10 @@
     
 body{
 
+  
+    background-image: url('assets/btech1.png');
 
-    background-color: rgb(4, 6, 7);
+    /* background-color: rgb(4, 6, 7); */
     }
     .heading img {
     width: 60px;

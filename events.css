@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Open+Sans&family=Poppins&display=swap');
 body{
-    background-color: #0B0C10;
+    /* background-color: #0B0C10; */
+    
+        background-image: url('assets/btech1.png');
+   
 }
 .logo{
     display:flex;
