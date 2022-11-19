@@ -6,6 +6,9 @@ body{
 
   
     background-image: url('assets/btech1.png');
+    background-repeat: no-repeat;
+    background-width: 100% 100%;
+
 
     /* background-color: rgb(4, 6, 7); */
     }
