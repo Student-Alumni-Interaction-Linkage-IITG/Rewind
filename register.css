@@ -183,10 +183,10 @@ Animations
 #aboutbtn {
     background: transparent;
     box-sizing: border-box;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     color: #FFFFFF;
     font-weight: 700;
-    width: 20vw;
+    width: 30vw;
     height: 5.5vw;
     margin: 2% 2% 2% 4%;
     border: 3px solid #000000;
@@ -210,6 +210,8 @@ Animations
     padding: 3% 8% 2% 0%;
     transition-property: visibility;
     transition-duration: .1s;
+    color: #FFFFFF;
+
 }
 
 .register-mob {
