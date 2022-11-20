@@ -139,7 +139,7 @@ Animations
     position: relative;
     text-align: center;
     justify-content: center;
-    padding-top: 10vw;
+    padding-top: 7vw;
     padding-bottom: 10vw;
 }
 
@@ -164,7 +164,7 @@ Animations
     height: 4vw;
     border: 3px solid rgba(102, 252, 241, 0.69);
     border-radius: 25px;
-    margin: 1.8vw 2vw 5vw;
+    margin: 1.8vw 1.5vw 1.5vw;
     cursor: pointer;
 }
 
