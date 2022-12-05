@@ -262,15 +262,36 @@ Animations
             color: #000000;
             background-color: rgba(29, 244, 229, 0.904);
         }
-
-
+        .hid{
+            display: none;
+        }
+        .old{
+            width: 200px;
+            height: 75px;
+        }
+        .abc{
+            text-decoration: none;
+            font-size: 45px;
+            font-weight: 600;
+            padding-top: 29px;
+            color: white;
+            font-family: 'Helvetica';
+            position: absolute;
+            right: 120px;
+        }
         @media only screen and (max-width: 768px) {
             body {
                 padding: 0.75rem 0.75rem;
             }
+            .abc{
+                display: none;
+            }
             .old{
                 height: 60px;
                 width: 130px;
+            }
+            .hid{
+                display: block;
             }
             .hidden{
                 display: none;
@@ -337,6 +358,7 @@ Animations
             <a href="rewindevents.html" , style="text-decoration: none; background-image: none; margin-left: 10px;">
                 <div class="rewind" style="background-image: none;"><img src="assets/rewind.png" class="old" style="background-image: none;" alt=""></div>
             </a>
+            <a href="register.html" class="abc" style="text-decoration: none;">REGISTER</a>
             <input id="toggle" type="checkbox"></input>
 
             <!-- <div class="hamcontainer"> -->
@@ -351,7 +373,7 @@ Animations
                 <div class="nav-wrapper">
                     <nav>
                         <a href="rewindevents.html">EVENTS</a><br>
-                        <a href="contacts.html">CONTACT</a><br>
+                        <a href="register.html" class="hid">REGISTER</a><br>
                     </nav>
                 </div>
             </div>
