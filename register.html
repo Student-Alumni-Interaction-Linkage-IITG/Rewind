@@ -16,15 +16,15 @@
     <header>
         <div class="logo">
             <div class="sail">
-                <a href="https://iitg.ac.in/sail/" style="text-decoration: none;"><img src="assets/sail.png" alt=""
-                        width="160" height="75"></a>
+                <a href="https://iitg.ac.in/sail/" style="text-decoration: none;" class="last">
+                    <img src="assets/sail.png" class="new" alt="" ></a>
             </div></a>
 
-            <div class="icon">
+            <div class="icon hidden" style="background-image: none;"> 
                 <!-- <img src="assets/icon.png" alt="" width="60" height="80"> -->
             </div>
-            <a href="rewindevents.html" , style="text-decoration: none;">
-                <div class="rewind"><img src="assets/rewind.png" alt="" width="200" heigth="250"></div>
+            <a href="rewindevents.html" , style="text-decoration: none; background-image: none; margin-left: 10px;">
+                <div class="rewind" style="background-image: none;"><img src="assets/rewind.png" class="old" style="background-image: none;" alt=""></div>
             </a>
             <input id="toggle" type="checkbox"></input>
 
@@ -145,7 +145,9 @@
     });
 
     var dest = new Date("nov 23, 2022 12:00:00").getTime();
-
+    $('#aboutbtn').click(()=>{
+        window.location.href = 'https://iitg.ac.in/sail/';
+    })
 
     setInterval(() => {
 
