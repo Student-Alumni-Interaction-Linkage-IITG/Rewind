@@ -42,33 +42,6 @@
             transition-timing-function: ease-out;
             transition-duration: 300ms;
         }
-
-        @keyframes append-animate {
-            from {
-                transform: scale(0);
-                width: 0px;
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes remove-animate {
-            from {
-                transform: scale(1);
-                opacity: 1;
-            }
-
-            to {
-                transform: scale(0);
-                width: 0px;
-                opacity: 0;
-            }
-        }
-
         .remove-animate {
             animation: remove-animate .5s linear;
         }
@@ -114,66 +87,60 @@
         /**
 Nav Styles
 **/
-        .nav {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-            transform: scale(0);
-        }
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+.nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+nav {
+    text-align:right;
+    margin-left: 25%;
+    padding-top: 80px;;
+    z-index: 1;
+}
+.new{
+    width:160px;
+    height:75px;
+}
+nav a {
+    margin-right: 5%;
+    font-family: Helvetica;
 
-        .nav-wrapper {
-            position: relative;
-            overflow: hidden;
-            overflow-y: auto;
-            height: 100%;
-            font-family: 'Space Mono';
-        }
-
-        nav {
-            text-align: right;
-            margin-left: 25%;
-            padding-top: 50px;
-            ;
-            z-index: 1;
-        }
-
-        nav a {
-            margin-right: 5%;
-            font-family: Helvetica;
-
-            position: relative;
-            text-decoration: none;
-            color: aqua;
-            font-size: 1.3em;
-            display: inline-block;
-            margin-top: 1.25em;
-            transition: color 0.2s ease-in-out;
-            letter-spacing: 1px;
-        }
-
-        nav a:before {
-            content: '';
-            height: 0;
-            position: absolute;
-            width: 0.25em;
-            background-color: white;
-            left: -0.5em;
-            transition: all 0.2s ease-in-out;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        nav a:hover:before {
-            height: 100%;
-        }
+    position: relative;
+    text-decoration: none;
+    color:aqua;
+    font-size: 1.3em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+    color: white;
+}
+nav a:hover:before {
+    height: 100%;
+}
 
         /**
 Animations
@@ -299,22 +266,27 @@ Animations
 
         @media only screen and (max-width: 768px) {
             body {
-                padding: 2rem 0.75rem;
+                padding: 0.75rem 0.75rem;
             }
-
+            .old{
+                height: 60px;
+                width: 130px;
+            }
+            .hidden{
+                display: none;
+            }
             header {
                 display: flex;
                 flex-direction: column;
             }
 
-            header div {
-
-                display: flex;
-            }
-
             header img {
                 height: 2.5rem;
                 padding-right: 0.75rem;
+            }
+            .new{
+                height: 60px;
+                width: 130px;
             }
 
             #registerbtn {
@@ -336,7 +308,7 @@ Animations
 
             .logo {
                 display: flex;
-                padding-left: 30px;
+                padding-left: 0px;
                 margin-top: 10px;
             }
 
@@ -347,143 +319,6 @@ Animations
             #toggle {
                 display: none;
             }
-
-            .hamburger {
-                position: absolute;
-                top: 5em;
-                right: 3%;
-                margin-left: -2em;
-                margin-top: -45px;
-                width: 2em;
-                height: 10px;
-                z-index: 5;
-                cursor: pointer;
-            }
-
-            .hamburger div {
-                position: relative;
-                width: 30px;
-                height: 4px;
-                border-radius: 3px;
-                background-color: aqua;
-                margin-top: 8px;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out;
-            }
-
-            /**
-Nav Styles
-**/
-            .nav {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                z-index: 1;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                overflow: hidden;
-                transition: all 0.3s ease-in-out;
-                transform: scale(0);
-            }
-
-            .nav-wrapper {
-                position: relative;
-                overflow: hidden;
-                overflow-y: auto;
-                height: 100%;
-                font-family: 'Space Mono';
-            }
-
-            nav {
-                text-align: right;
-                margin-left: 25%;
-                padding-top: 50px;
-                ;
-                z-index: 1;
-            }
-
-            nav a {
-                margin-right: 5%;
-                font-family: Helvetica;
-
-                position: relative;
-                text-decoration: none;
-                color: aqua;
-                font-size: 1.3em;
-                display: inline-block;
-                margin-top: 1.25em;
-                transition: color 0.2s ease-in-out;
-                letter-spacing: 1px;
-            }
-
-            nav a:before {
-                content: '';
-                height: 0;
-                position: absolute;
-                width: 0.25em;
-                background-color: white;
-                left: -0.5em;
-                transition: all 0.2s ease-in-out;
-            }
-
-            nav a:hover {
-                color: white;
-            }
-
-            nav a:hover:before {
-                height: 100%;
-            }
-
-            /**
-Animations
-**/
-
-            #toggle:checked+.hamburger .top-bun {
-                transform: rotate(-45deg);
-                margin-top: 25px;
-                cursor: pointer;
-            }
-
-            #toggle:checked+.hamburger .bottom-bun {
-                opacity: 0;
-                cursor: pointer;
-                transform: rotate(45deg);
-            }
-
-            #toggle:checked+.hamburger .meat {
-                transform: rotate(45deg);
-                margin-top: -4px;
-                cursor: pointer;
-            }
-
-            #toggle:checked+.hamburger+.nav {
-                top: 0;
-                cursor: pointer;
-                transform: scale(1);
-            }
-
-            .hamcontainer:hover {
-                cursor: pointer;
-            }
-
-            .hamcontainer {
-                background-color: red;
-            }
-
-            .aboutus {
-                margin-top: -3rem;
-            }
-
-            .rightarrow {
-                display: block;
-                margin-left: 80vw;
-                margin-top: 2.2rem;
-            }
-
-            /* Contact Us */
-
-
         }
     </style>
 </head>
@@ -492,15 +327,15 @@ Animations
     <header>
         <div class="logo">
             <div class="sail">
-                <a href="https://iitg.ac.in/sail/" style="text-decoration: none;"><img src="assets/sail.png" alt=""
-                        width="160" height="75"></a>
+                <a href="https://iitg.ac.in/sail/" style="text-decoration: none;" class="last">
+                    <img src="assets/sail.png" class="new" alt="" ></a>
             </div></a>
 
-            <div class="icon">
+            <div class="icon hidden" style="background-image: none;"> 
                 <!-- <img src="assets/icon.png" alt="" width="60" height="80"> -->
             </div>
-            <a href="rewindevents.html" , style="text-decoration: none;">
-                <div class="rewind"><img src="assets/rewind.png" alt="" width="200" hegith="200"></div>
+            <a href="rewindevents.html" , style="text-decoration: none; background-image: none; margin-left: 10px;">
+                <div class="rewind" style="background-image: none;"><img src="assets/rewind.png" class="old" style="background-image: none;" alt=""></div>
             </a>
             <input id="toggle" type="checkbox"></input>
 
@@ -515,9 +350,9 @@ Animations
             <div class="nav">
                 <div class="nav-wrapper">
                     <nav>
-                        <!-- <a href="register.html">REGISTER</a><br> -->
                         <a href="rewindevents.html">EVENTS</a><br>
                         <a href="contacts.html">CONTACT</a><br>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -553,71 +388,5 @@ Animations
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    const AddDetail = (id) => {
-        if (document.getElementById('Detail' + id)) return;
-        let box = document.createElement('div');
-        box.innerHTML = ` <button class="sports-box" onclick="RemoveDetail('Detail` + id + `')">
-                <div class="sports s1">TOURNAMENT</div>
-                <div class="sports s2">DETAIL</div>
-            </button>
-        </div>`;
-        temp = document.getElementById(id)
-        if (screen.width < 768) {
-            details = document.querySelector('#' + id).querySelector(".card-details")
-            details.setAttribute('style', 'display: block;')
-            temp.setAttribute('style', temp.getAttribute('style') + 'background-color: rgba(255, 255, 255, 0.7); background-blend-mode: overlay;');
-        }
-        else {
-            box.classList.add('new-card', 'card')
-            box.setAttribute('style', 'background-image: url(./football.png);');
-            box.setAttribute('id', 'Detail' + id);
-            $(box).insertAfter(temp);
-        }
-    };
-    const RemoveDetail = (id) => {
-        temp = document.getElementById(id)
-        if (screen.width < 768) {
-            details = document.querySelector('#' + id).querySelector(".card-details")
-            details.setAttribute('style', 'display: none;')
-            temp.setAttribute('style', temp.getAttribute('style') + 'background-color: rgba(255, 255, 255, 0.0); background-blend-mode: overlay;');
-        }
-        else {
-            document.getElementById(id).setAttribute('class', 'remove-animate card')
-            setTimeout(() => document.getElementById(id).remove(), 500)
-        }
-    }
-    const EventsInfo = () => {
-        let inf = document.getElementById('info');
-        let box = document.getElementById('box');
-        let btn = document.getElementById('btn');
-        if (inf.style.display == "none") {
-            inf.style.display = "block";
-            box.style.backgroundColor = "#334660";
-            btn.style.backgroundColor = "white";
-            btn.style.color = "black";
-            document.getElementById("info").style.transitionDuration = "500ms";
-            document.getElementById("box").style.transitionDuration = "500ms";
-            document.getElementById("btn").style.transitionDuration = "500ms";
-            document.getElementById("info").style.transitionTimingFunction = "ease-out";
-            document.getElementById("box").style.transitionTimingFunction = "ease-out";
-            document.getElementById("btn").style.transitionTimingFunction = "ease-out";
-        }
-        else {
-            inf.style.display = "none";
-            box.style.backgroundColor = "#46A29F";
-            btn.style.backgroundColor = "#46A29F";
-            btn.style.color = "white";
-            document.getElementById("info").style.transitionDuration = "500ms";
-            document.getElementById("box").style.transitionDuration = "500ms";
-            document.getElementById("btn").style.transitionDuration = "500ms";
-            document.getElementById("info").style.transitionTimingFunction = "ease-out";
-            document.getElementById("box").style.transitionTimingFunction = "ease-out";
-            document.getElementById("btn").style.transitionTimingFunction = "ease-out";
-        }
-    }
-
-</script>
-
 
 </html>
