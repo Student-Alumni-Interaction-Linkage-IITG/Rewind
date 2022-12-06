@@ -30,7 +30,12 @@ body{
 }
 .schedule1 div{
     color: #FFFFFF;
+    padding: 5px 10px;
 }
+.schedule1{
+    gap: 5px;
+}
+
 .background{
     background-color: rgb(70, 162, 159, 0.20);
     margin-top: 2%;
@@ -40,6 +45,20 @@ body{
     line-height: 60px;
     font-size: 24px;
     font-weight: 300;
+    
+}
+.background1{
+    background-color: rgb(70, 162, 159, 0.20);
+    margin-top: 1%;
+    border: solid 2px #66FCF1;
+    border-radius: 20px;
+    padding: 10px 30px;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 1em;
+    gap: 1em;
+    margin: -15px;
 }
 
 .hamburger {
@@ -386,11 +405,11 @@ Animations
     top: 2em;
   
 } */
-.carousel-inner
+/* .carousel-inner
 {
-    /* position: relative;
-    top: -2em; */
-}
+    position: relative;
+    top: -2em;
+} */
 .item{
     height: 458px;
     display:flex;
@@ -491,6 +510,16 @@ Animations
     .background{
         padding: 10px 30px;
         line-height: 45px;
+    }
+    .background1{
+        padding: 10px 30px;
+        line-height: 45px;
+    }
+    .background1:focus{
+        background-color: rgb(70, 162, 159, 0.10);
+        transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    border: solid 2.5px #66FCF1;
     }
     .background:focus{
         background-color: rgb(70, 162, 159, 0.10);
