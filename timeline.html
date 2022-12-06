@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Rewind - TimeLine</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <div class="sail">
+            <a href="https://iitg.ac.in/sail/" style="text-decoration: none;"><img src="assets/sail.png" alt=""
+                    width="160" height="75" class="sailimg"></a>
+        </div>
+
+        <div class="icon">
+            <!-- <img src="assets/icon.png" alt="" width="60" height="80"> -->
+        </div>
+        <a href="rewindevents.html" , style="text-decoration: none;">
+            <div class="rewind"><img src="assets/rewind.png" alt="" width="200" heigth="250" class="rewindimg"></div>
+        </a>
+        <a target="_blank"
+                href="register.html">
+                <button type="button" style="font-family: Helvetica;" id="registerbtn">Register</button>
+            </a>
+        <input id="toggle" type="checkbox"></input>
+
+        <!-- <div class="hamcontainer"> -->
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+        <!-- </div> -->
+
+        <!-- <button type="button" id="registerbtn">Register</button> -->
+        <div class="nav">
+            <div class="nav-wrapper">
+                <nav>
+                    <!-- <a href="register.html">REGISTER</a><br> -->
+                    <a href="rewindevents.html">EVENTS</a><br>
+                    <a href="contacts.html">CONTACT</a><br>
+                    <a id="reg" href="register.html">REGISTER</a>
+                </nav>
+                    
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="events">TIMELINE</div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                 
+                <div class="item">
+                    <div class="day">DAY 1</div>
+                    <div class="date">10th, december</div>
+                    <div class="background">
+                        <div class="schedule">
+                            <div class="event1"><span class="time">11:00 a.m. :</span> Opening Ceremony</div>
+                            <div class="event2"><span class="time">3:00 p.m. :</span> Tug of War</div>
+                            <div class="event3"><span class="time">7:00 p.m. :</span> Cultural Night</div>
+                            <div class="event3"><span class="time">For any queries contact :</span> Sangesh :+91 99948 58059</div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="item">
+
+                <!-- <div class="flip-card gap">
+                    <div class="flip-card-inner">
+                        <div class="card flip-card-front" id="card6"
+                            style="background-image: url(assets/Frame\ 512.png);">
+
+                            
+                            <div class="football"></div>
+                            <div class="catch-spirit"></div>
+                            <div class="match">
+                                <div class="team1"></div>
+                                <div class="vs"></div>
+                                <div class="team2"></div>
+                            </div>
+                            <div class="lorem"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="flip-card-back new-card" id="detail6"
+                            style="background-image: url(assets/Frame\ 518.png);">
+                            
+                            <div class="football"></div>
+                            <div class="catch-spirit"></div>
+                            <div class="match">
+                                <div class="team1"></div>
+                                <div class="vs"></div>
+                                <div class="team2"></div>
+                            </div>
+                            <div class="lorem"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="item">
+                    <div class="day">DAY 2</div>
+                    <div class="date">11th, december</div>
+                    <div class="background">
+                        <div class="schedule">
+                            <div class="event1"><span class="time">11:00 a.m. :</span> Scavenger Hunt</div>
+                            <div class="event2"><span class="time">2:00 p.m. :</span> Departmental Lecture</div>
+                            <div class="event3"><span class="time">7:00 p.m. :</span> Finalis Resonare</div>
+                            <div class="event3"><span class="time">For any queries contact :</span> Deepali :+91 94663 83727</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item">
+                    <div class="day">DAY 3</div>
+                    <div class="date">12th, december</div>
+                    <div class="background">
+                        <div class="schedule1">
+                            <div class="event0" style="font-size: 15px;"><span class="time">7:30 a.m. :</span> Silk Robe Distribution</div>
+                            <div class="event1" style="font-size: 15px;"><span class="time">8:00 a.m. :</span> Graduation Ceremony</div>
+                            <div class="event2" style="font-size: 15px;"><span class="time">12:00 p.m. :</span> Batch Photographs</div>
+                            <div class="event3" style="font-size: 15px;"><span class="time">1:30 p.m. :</span> Lunch</div>
+                            <div class="event4" style="font-size: 15px;"><span class="time">4:00 p.m. :</span> Closing Ceremony<div class="tab"></div></div>
+                            <div class="event4" style="font-size: 15px;"><span class="time">For any queries contact :</span> Khushi :+91 83798 74427</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- <div class="events-box" id="box">
+        <button class="eventbtn" id="eventbtn" onclick="EventsInfo()">EVENTS</button>
+        <div class="eventsinfo" id="eventsinfo" style="font-size:15px; position: relative;">To experience the
+            unexperienced
+            (thanks to Covid,
+            huh..) we have various events planned during your three days visit from Scaveneger Hunt to Graduation
+            Ceremony. Hope you create the best memories out of them..
+            <br>
+            <h1 style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1>
+        </div>
+    </div> -->
+
+    <div class="about">
+        <button type="button" id="aboutbtn">EVENTS</button>
+        <p class="aboutpara" id="aboutpara">Everyone's dream is to live a cherishable college life, but Covid took the
+            year 2020 and 2021. So to experience the most exciting and memorable moments of campus life, SAIL has
+            planned 3 day fun filled alumni rewind for graduated batches of 2020 and 2021 to relive their old memories
+            <br>
+            <!-- <h1  id ="cheers" class="cheers" style="position: absolute; left: 50%; color: yellow;">Cheers!!</h1>  -->
+        </p>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 
+    
+ -->
+
+
+<script>
+
+    $('#aboutbtn').click(function () {
+        // const para = document.getElementById('aboutpara');
+
+        // if ($('#aboutpara').css('visibility') == 'hidden') {
+        //     console.log(para);
+        //     $('#aboutpara').css({
+        //         'visibility': 'visible'
+
+        //     });
+        //     $('.about').css({
+        //         'backgroundColor': '#3faec4'
+        //     });
+        //     $("#cheers").css({
+        //         'visibility': 'visible'
+
+        //     });
+
+
+        // }
+        // else {
+        //     $('.aboutpara').css({
+        //         'visibility': 'hidden'
+        //     });
+        //     $('.about').css({
+        //         'background-color': '#46A29F'
+        //     });
+        //     $('.aboutbtn').css({
+        //         'background': 'transparent',
+        //         'color': '#FFFFFF'
+        //     });
+        //     $("#cheers").css({
+        //         'visibility': 'hidden'
+
+        //     });
+        // }
+    });
+
+    $(document).ready(function () {
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+            $(this).toggleClass('open');
+        });
+    });
+
+
+
+</script>
+
+
+
+</html>
